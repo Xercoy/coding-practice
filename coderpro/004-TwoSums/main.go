@@ -8,12 +8,7 @@ type Node struct {
 }
 
 func Add(list1, list2 *Node) (*Node, error) {
-	node, err := AddHelper(list1, list2, 0)
-	if err != nil {
-		return node, err
-	}
-
-	return node, err
+	return AddHelper(list1, list2, 0)
 }
 
 func AddHelper(list1, list2 *Node, carryover int) (*Node, error) {
